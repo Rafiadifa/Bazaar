@@ -114,10 +114,22 @@ nav ul li a{
 
 }
 
+@media screen and (max-width: 770px) {
+    .banner-text h1 {
+    font-size: 100px;
+    }
+    .banner-btn a {
+      display: block;
+      margin: 20px auto;
+    }
+}
+
 #HOME {
   width: 100%;
   padding: 70px 0;
 }
+
+/*--HOME--*/
 
 .title-text {
   text-align: center;
@@ -173,7 +185,7 @@ nav ul li a{
 .Home-img img {
   width: 70%;
   border-radius: 10px;
-  background: linear-gradient(#264a85,white);
+  background-color: linear-gradient(#264a85,white);
 }
 
 .Homes h1 {
@@ -186,10 +198,10 @@ nav ul li a{
 .HOME-desc {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
 }
 
-/*.HOME-icon fa {
+.HOME-icon .fa {
   width: 50px;
   height: 50px;
   font-size: 30px;
@@ -197,9 +209,57 @@ nav ul li a{
   border-radius: 8px;
   border: 1px solid #264a85;
   color: #264a85;
-}*/
+  display: inline-block;
+}
 
 .HOME-text p {
   padding: 0 20px;
   text-align: initial;
 }
+
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 35px;
+  }
+  .HOMES {
+    flex-basis: 100%;
+  }
+  .Home-img {
+    flex-basis: 100%;
+    margin: auto;
+  }
+
+  .Home-img img {
+    width: 100%;
+  }
+}
+
+/*--PRODUCTS--*/
+
+#products  {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+
+.products-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.bazaar-size {
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bazaar-size img {
+  width: 40%;
+  border-radius: 7px;
+}
+
